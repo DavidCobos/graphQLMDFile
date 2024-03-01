@@ -1,0 +1,16 @@
+query{
+  getFacturation(orgid:"org1", page: 1, pageSize: 10){
+    orgid
+    rfc,
+    email,
+    usoCFDI
+  }
+}
+
+mutation {
+  createFacturacion(usoCFDI:"03",rfc:"XAXXdad", email:"sadaf", orgid:"444"){
+    Id
+    Href
+    DocumentId
+  }
+}
